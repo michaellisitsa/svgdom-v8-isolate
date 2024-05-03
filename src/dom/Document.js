@@ -63,8 +63,6 @@ const getSVGElementForName = (name) => {
 
 const getHTMLElementForName = (name) => {
   switch (name.toLowerCase()) {
-  case 'img':
-    return HTMLImageElement
   case 'link':
     return HTMLLinkElement
   case 'script':
