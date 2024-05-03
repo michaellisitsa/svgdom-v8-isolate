@@ -1,6 +1,6 @@
 import * as pathUtils from './pathUtils.js'
 import * as regex from './regex.js'
-import * as textUtils from './textUtils.js'
+import * as textUtils from './fakeTextUtils.js'
 import { NoBox } from '../other/Box.js'
 import { NodeIterator } from './NodeIterator.js'
 import { NodeFilter } from '../dom/NodeFilter.js'

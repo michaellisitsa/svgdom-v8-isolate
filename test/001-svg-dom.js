@@ -387,6 +387,7 @@ describe('svg document', () => {
 
     const bbox2 = text.getBBox()
 
+    // Tests will fail because fakeTextUtil doesn't calculate width and height.
     assert.strictEqual('' + bbox1.x, (bbox2.x + bbox2.width).toFixed(0))
     assert.strictEqual(bbox1.y, bbox2.y)
     assert.strictEqual(bbox1.width, bbox2.width)

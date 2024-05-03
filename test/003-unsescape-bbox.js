@@ -16,6 +16,7 @@ describe('unescape-bbox', () => {
     svgRoot.appendChild(textWW)
     const bboxLt = getSegments(textLt).bbox()
     const bboxWW = getSegments(textWW).bbox()
+    // Test will fail because fakeTextUtils will not calculate the width and height
     assert(bboxLt.width < bboxWW.width)
   })
 })
