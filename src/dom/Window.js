@@ -8,6 +8,7 @@ import { CustomEvent } from './CustomEvent.js'
 import { Event } from './Event.js'
 import { Element } from './Element.js'
 import { Attr } from './Attr.js'
+import { HTMLImageElement } from './html/HTMLImageElement.js'
 import { HTMLLinkElement } from './html/HTMLLinkElement.js'
 import { HTMLScriptElement } from './html/HTMLScriptElement.js'
 import { HTMLElement } from './html/HTMLElement.js'
@@ -89,6 +90,7 @@ const winProps = {
   HTMLElement,
   HTMLLinkElement,
   HTMLScriptElement,
+  HTMLImageElement,
   // Image: HTMLImageElement, // is set on construction
   SVGMatrix,
   SVGPoint,

@@ -5,6 +5,7 @@ import { Attr } from './Attr.js'
 import { DocumentFragment } from './DocumentFragment.js'
 import { HTMLLinkElement } from './html/HTMLLinkElement.js'
 import { HTMLScriptElement } from './html/HTMLScriptElement.js'
+import { HTMLImageElement } from './html/HTMLImageElement.js'
 import { HTMLElement } from './html/HTMLElement.js'
 import { elementAccess } from './mixins/elementAccess.js'
 import { mixin } from '../utils/objectCreationUtils.js'
@@ -63,6 +64,8 @@ const getSVGElementForName = (name) => {
 
 const getHTMLElementForName = (name) => {
   switch (name.toLowerCase()) {
+  case 'img':
+    return HTMLImageElement
   case 'link':
     return HTMLLinkElement
   case 'script':

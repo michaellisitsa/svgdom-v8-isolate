@@ -1,4 +1,4 @@
-import sizeOf from 'image-size'
+import sizeOf from './fakeImageSize.js'
 import { Event } from '../Event.js'
 import { HTMLElement } from './HTMLElement.js'
 // import { getFileBufferFromURL } from '../../utils/fileUrlToBuffer.js'
